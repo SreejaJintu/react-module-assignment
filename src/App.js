@@ -1,19 +1,21 @@
+
 import './App.css';
-import Home from './components/pages/Home';
+import Home from './pages/Home';
+import { Provider } from 'react-redux';
 // import Signup from './components/signup/Signup';
 
 // import ReactDOM from 'react-dom/client';
 
+
 function App() {
   return (
-    <div className="App">
-      
-    
-      <Home/>
-          {/* <Signup/> */}
-     
-      
+    <Provider>
+ <div className="App">
+ 
+<Home/>
+        
     </div>
+    </Provider>
   );
 }
 

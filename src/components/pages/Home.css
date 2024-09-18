@@ -1,8 +1,0 @@
-.productsBox{
-
-    width: 100%;
-    overflow-x: hidden;
-    display: flex;
-    gap:5px;
-    flex-wrap: wrap;
-}

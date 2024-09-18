@@ -6,18 +6,20 @@ function Cards({product}) {
 
 
   return (
+    <div className='col-md-3'>
 
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={product.image} />
+    <Card className='h-100 text-center p-4' style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={product.image} style={{ height: '250px' }} />
       <Card.Body>
-        <Card.Title>{product.title}</Card.Title>
+        <Card.Title className='mb-0'>{product.title.substring(0,12)}</Card.Title>
         
         <Card.Text>
-          {product.price}
+          ${product.price}
         </Card.Text>
-        <Button variant="primary">Add to cart</Button>
+        <Button variant="btn btn-outline-dark" href=''>Add to cart</Button>
       </Card.Body>
     </Card>
+    </div>
   );
 }
 

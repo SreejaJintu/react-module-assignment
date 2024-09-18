@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import Cards from '../Cards';
-import './Home.css'
+import Cards from './Cards';
 
-function Home() {
+function Products() {
  //const navigate=useNavigate()
  const [products,setProducts]=useState([]);
     
@@ -27,11 +26,15 @@ catch(err){
    },[])
 
  return (
- <div className='productsBox'>
-     {products.map((product)=><Cards product={product} />)}
-     
+ <div className='productsBox py-5 my-5'>
+  <div className='row'>
+    <div className='col-12 mb-5'></div>
+    <h1 className='fw-bolder display-6 text-center mb-3'>Latest Products</h1>
+    <hr />
+  {products.map((product)=><Cards product={product} />)}
+  </div>
  </div>
 )
 }
 
-export default Home
+export default Products
