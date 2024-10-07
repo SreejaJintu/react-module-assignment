@@ -15,7 +15,9 @@ function Navbar1() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary fixed-top" style={{ paddingTop: '0.2rem', paddingBottom: '0.2rem', height: '50px' }}>
       <Container>
-        <Navbar.Brand className='fw-bold fs-1 text-primary' href="#home">Trendz</Navbar.Brand>
+        
+        <Navbar.Brand as={Link} to="/home"  className='fw-bold fs-1 text-primary'>Trendz</Navbar.Brand>
+     
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="ms-auto">

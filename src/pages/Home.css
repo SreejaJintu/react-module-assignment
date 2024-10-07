@@ -1,0 +1,23 @@
+/* Home.css */
+
+#hero-container {
+    overflow: hidden;
+    height: 100vh; 
+  }
+  
+  /* .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 0 20px;
+  } */
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+  }
+  

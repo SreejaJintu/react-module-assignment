@@ -4,8 +4,7 @@ import image1 from '../images/Estrategias-ecommerce-para-los-pequenos-y-medianos
 import { Button, Card } from 'react-bootstrap';
 import Products from '../components/Products';
 import { Link } from 'react-router-dom';
-// import image1 from '../images/image.png'
-
+import './Home.css'
 function Home() {
   return (
     <div id='hero-container '>
