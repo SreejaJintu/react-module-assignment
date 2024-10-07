@@ -1,26 +1,10 @@
-// import { createSlice } from "@reduxjs/toolkit";
-
-
-// const INITIALSTATE={
-
-//     cartProducts:{}
-// }
-
-// export  const cartSlice =createSlice{
-
-//     name:'cartNumber',
-//     INITIALSTATE,
-//     reducers:{
-
-//         addToCart(state,action)
-//     }
-// } 
 
 import { configureStore } from "@reduxjs/toolkit";
-import Reducer from "./Reducer";
+import Reducer from "./cartSlice";
+import cartReducer  from "./cartSlice";
 export default  configureStore({
     reducer:{
-        counter:Reducer
+        cart:cartReducer
 
     }
 })
